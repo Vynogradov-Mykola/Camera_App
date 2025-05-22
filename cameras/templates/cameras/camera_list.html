@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Camera List</title>
+</head>
+<body>
+    <h1>Available Cameras</h1>
+    <ul>
+        {% for camera in cameras %}
+            <li><strong>{{ camera.name }}</strong> — {{ camera.location }} —
+            <a href="{{ camera.stream_url }}" target="_blank">Stream</a></li>
+        {% empty %}
+            <li>No cameras available</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
