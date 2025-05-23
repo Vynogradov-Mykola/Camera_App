@@ -1,13 +1,15 @@
 from django.shortcuts import render
-
+from django.urls import reverse
 # Create your views here.
 from django.shortcuts import render
 from .models import Camera
 
+
 def camera_list(request):
     cameras = Camera.objects.all()
+    for cam in cameras:
+        cam.stream_url = request.build_absolute_uri(reverse('camera_stream'))  # or with ID if needed
     return render(request, 'cameras/camera_list.html', {'cameras': cameras})
-
 
 from django.http import StreamingHttpResponse
 from django.shortcuts import render

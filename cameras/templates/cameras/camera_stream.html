@@ -1,10 +1,71 @@
 <!DOCTYPE html>
-<html>
+<html lang="uk">
 <head>
+    <meta charset="UTF-8">
     <title>Live Camera Stream</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background-color: #333;
+            color: white;
+            padding: 1rem 2rem;
+            text-align: center;
+        }
+
+        main {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 2rem;
+        }
+
+        h2 {
+            margin-bottom: 1rem;
+            color: #333;
+        }
+
+        .video-frame {
+            background-color: #fff;
+            padding: 1rem;
+            border-radius: 10px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+            border: 1px solid #ddd;
+        }
+
+        .video-frame img {
+            max-width: 100%;
+            border-radius: 8px;
+        }
+
+        footer {
+            margin-top: 2rem;
+            text-align: center;
+            color: #888;
+            font-size: 0.9rem;
+        }
+    </style>
 </head>
 <body>
-    <h1>Камера ноутбука (пряма трансляція)</h1>
-    <img src="{% url 'video_feed' %}" width="640" height="480">
+
+    <header>
+        <h1> Камера ноутбука (пряма трансляція)</h1>
+    </header>
+
+    <main>
+        <h2>Live Stream</h2>
+        <div class="video-frame">
+            <img src="{% url 'video_feed' %}" width="640" height="480">
+        </div>
+    </main>
+
+    <footer>
+        &copy; {{ year|default:2025 }} Відеоспостереження. Усі права захищені.
+    </footer>
+
 </body>
 </html>
