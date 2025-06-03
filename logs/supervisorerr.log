@@ -1,5 +1,5 @@
 [uWSGI] getting INI configuration from /home/kolre2/Proektuvanya/Program/venv/bin/uwsgi.ini
-*** Starting uWSGI 2.0.29 (32bit) on [Fri May 23 02:15:37 2025] ***
+*** Starting uWSGI 2.0.29 (32bit) on [Mon Jun  2 22:56:04 2025] ***
 compiled with version: 10.2.1 20210110 on 22 May 2025 02:56:22
 os: Linux-5.10.0-15-amd64 #1 SMP Debian 5.10.120-1 (2022-06-09)
 nodename: raspberry
@@ -13,7 +13,7 @@ uWSGI running as root, you can use --uid/--gid/--chroot options
 *** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
 chdir() to /home/kolre2/Proektuvanya/Program
 *** WARNING: you are running uWSGI without its master process manager ***
-your processes number limit is 7476
+your processes number limit is 9504
 your memory page size is 4096 bytes
 detected max file descriptor number: 1024
 lock engine: pthread robust mutexes
@@ -24,7 +24,7 @@ uWSGI running as root, you can use --uid/--gid/--chroot options
 Python version: 3.9.2 (default, Mar 20 2025, 02:07:39)  [GCC 10.2.1 20210110]
 PEP 405 virtualenv detected: /home/kolre2/Proektuvanya/Program/venv
 Set PythonHome to /home/kolre2/Proektuvanya/Program/venv
-Python main interpreter initialized at 0x58131700
+Python main interpreter initialized at 0x583d0700
 uWSGI running as root, you can use --uid/--gid/--chroot options
 *** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
 python threads support enabled
@@ -32,34 +32,31 @@ your server socket listen backlog is limited to 100 connections
 your mercy for graceful operations on workers is 60 seconds
 mapped 64128 bytes (62 KB) for 1 cores
 *** Operational MODE: single process ***
-WSGI app 0 (mountpoint='') ready in 1 seconds on interpreter 0x58131700 pid: 17638 (default app)
+WSGI app 0 (mountpoint='') ready in 1 seconds on interpreter 0x583d0700 pid: 22279 (default app)
 uWSGI running as root, you can use --uid/--gid/--chroot options
 *** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
 *** uWSGI is running in multiple interpreter mode ***
-spawned uWSGI worker 1 (and the only) (pid: 17638, cores: 1)
-[pid: 17638|app: 0|req: 1/1] 127.0.0.1 () {44 vars in 832 bytes} [Fri May 23 01:15:43 2025] GET / => generated 2098 bytes in 955 msecs (HTTP/1.1 200) 6 headers in 208 bytes (1 switches on core 0)
-[pid: 17638|app: 0|req: 2/2] 127.0.0.1 () {46 vars in 882 bytes} [Fri May 23 01:17:05 2025] GET /stream/ => generated 1538 bytes in 26 msecs (HTTP/1.1 200) 6 headers in 208 bytes (1 switches on core 0)
-Fri May 23 01:17:07 2025 - SIGPIPE: writing to a closed pipe/socket/fd (probably the client disconnected) on request /video_feed/ (ip 127.0.0.1) !!!
-Fri May 23 01:17:07 2025 - uwsgi_response_write_body_do(): Broken pipe [core/writer.c line 429] during GET /video_feed/ (127.0.0.1)
-OSError: write error
-[pid: 17638|app: 0|req: 3/3] 127.0.0.1 () {42 vars in 760 bytes} [Fri May 23 01:17:05 2025] GET /video_feed/ => generated 24939 bytes in 1548 msecs (HTTP/1.1 200) 5 headers in 203 bytes (1 switches on core 0)
-[pid: 17638|app: 0|req: 4/4] 127.0.0.1 () {42 vars in 813 bytes} [Fri May 23 01:17:12 2025] GET /admin/ => generated 6212 bytes in 223 msecs (HTTP/1.1 200) 10 headers in 470 bytes (1 switches on core 0)
-Not Found: /static/admin/css/base.css
-[pid: 17638|app: 0|req: 5/5] 127.0.0.1 () {42 vars in 741 bytes} [Fri May 23 01:17:12 2025] GET /static/admin/css/base.css => generated 2675 bytes in 46 msecs (HTTP/1.1 404) 6 headers in 215 bytes (1 switches on core 0)
-Not Found: /static/admin/css/dark_mode.css
-[pid: 17638|app: 0|req: 6/6] 127.0.0.1 () {42 vars in 751 bytes} [Fri May 23 01:17:13 2025] GET /static/admin/css/dark_mode.css => generated 2690 bytes in 63 msecs (HTTP/1.1 404) 6 headers in 215 bytes (1 switches on core 0)
-Not Found: /static/admin/css/nav_sidebar.css
-[pid: 17638|app: 0|req: 7/7] 127.0.0.1 () {42 vars in 755 bytes} [Fri May 23 01:17:13 2025] GET /static/admin/css/nav_sidebar.css => generated 2696 bytes in 64 msecs (HTTP/1.1 404) 6 headers in 215 bytes (1 switches on core 0)
-Not Found: /static/admin/css/dashboard.css
-[pid: 17638|app: 0|req: 8/8] 127.0.0.1 () {42 vars in 751 bytes} [Fri May 23 01:17:13 2025] GET /static/admin/css/dashboard.css => generated 2690 bytes in 60 msecs (HTTP/1.1 404) 6 headers in 215 bytes (1 switches on core 0)
-Not Found: /static/admin/css/responsive.css
-[pid: 17638|app: 0|req: 9/9] 127.0.0.1 () {42 vars in 753 bytes} [Fri May 23 01:17:13 2025] GET /static/admin/css/responsive.css => generated 2693 bytes in 56 msecs (HTTP/1.1 404) 6 headers in 215 bytes (1 switches on core 0)
-Not Found: /static/admin/js/theme.js
-[pid: 17638|app: 0|req: 10/10] 127.0.0.1 () {42 vars in 724 bytes} [Fri May 23 01:17:13 2025] GET /static/admin/js/theme.js => generated 2672 bytes in 83 msecs (HTTP/1.1 404) 6 headers in 215 bytes (1 switches on core 0)
-Not Found: /static/admin/js/nav_sidebar.js
-[pid: 17638|app: 0|req: 11/11] 127.0.0.1 () {42 vars in 736 bytes} [Fri May 23 01:17:13 2025] GET /static/admin/js/nav_sidebar.js => generated 2690 bytes in 87 msecs (HTTP/1.1 404) 6 headers in 215 bytes (1 switches on core 0)
+spawned uWSGI worker 1 (and the only) (pid: 22279, cores: 1)
+[pid: 22279|app: 0|req: 1/1] 127.0.0.1 () {46 vars in 882 bytes} [Mon Jun  2 21:56:12 2025] GET /stream/ => generated 1538 bytes in 511 msecs (HTTP/1.1 200) 6 headers in 208 bytes (1 switches on core 0)
+Traceback (most recent call last):
+  File "./cameras/views.py", line 16, in gen
+    from mediapipe.solutions import hands as mp_hands_module
+  File "/home/kolre2/Proektuvanya/Program/venv/lib/python3.9/site-packages/mediapipe/__init__.py", line 16, in <module>
+    from mediapipe.python import *
+  File "/home/kolre2/Proektuvanya/Program/venv/lib/python3.9/site-packages/mediapipe/python/__init__.py", line 17, in <module>
+    from mediapipe.python._framework_bindings import resource_util
+ModuleNotFoundError: No module named 'mediapipe.python._framework_bindings'
+[pid: 22279|app: 0|req: 2/2] 127.0.0.1 () {42 vars in 760 bytes} [Mon Jun  2 21:56:13 2025] GET /video_feed/ => generated 0 bytes in 429 msecs (HTTP/1.1 200) 5 headers in 203 bytes (0 switches on core 0)
+[pid: 22279|app: 0|req: 3/3] 127.0.0.1 () {46 vars in 882 bytes} [Mon Jun  2 22:05:22 2025] GET /stream/ => generated 1538 bytes in 3 msecs (HTTP/1.1 200) 6 headers in 208 bytes (1 switches on core 0)
+[ WARN:0@549.450] global cap_v4l.cpp:913 open VIDEOIO(V4L2:/dev/video0): can't open camera by index
+[ERROR:0@549.450] global obsensor_uvc_stream_channel.cpp:158 getStreamChannelGroup Camera index out of range
+Traceback (most recent call last):
+  File "./cameras/views.py", line 16, in gen
+    import cv2
+ModuleNotFoundError: No module named 'mediapipe'
+[pid: 22279|app: 0|req: 4/4] 127.0.0.1 () {42 vars in 760 bytes} [Mon Jun  2 22:05:22 2025] GET /video_feed/ => generated 0 bytes in 22 msecs (HTTP/1.1 200) 5 headers in 203 bytes (0 switches on core 0)
 [uWSGI] getting INI configuration from /home/kolre2/Proektuvanya/Program/venv/bin/uwsgi.ini
-*** Starting uWSGI 2.0.29 (32bit) on [Fri May 23 02:20:08 2025] ***
+*** Starting uWSGI 2.0.29 (32bit) on [Mon Jun  2 23:06:07 2025] ***
 compiled with version: 10.2.1 20210110 on 22 May 2025 02:56:22
 os: Linux-5.10.0-15-amd64 #1 SMP Debian 5.10.120-1 (2022-06-09)
 nodename: raspberry
@@ -73,7 +70,7 @@ uWSGI running as root, you can use --uid/--gid/--chroot options
 *** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
 chdir() to /home/kolre2/Proektuvanya/Program
 *** WARNING: you are running uWSGI without its master process manager ***
-your processes number limit is 7476
+your processes number limit is 9504
 your memory page size is 4096 bytes
 detected max file descriptor number: 1024
 lock engine: pthread robust mutexes
@@ -84,7 +81,7 @@ uWSGI running as root, you can use --uid/--gid/--chroot options
 Python version: 3.9.2 (default, Mar 20 2025, 02:07:39)  [GCC 10.2.1 20210110]
 PEP 405 virtualenv detected: /home/kolre2/Proektuvanya/Program/venv
 Set PythonHome to /home/kolre2/Proektuvanya/Program/venv
-Python main interpreter initialized at 0x57994700
+Python main interpreter initialized at 0x573e0700
 uWSGI running as root, you can use --uid/--gid/--chroot options
 *** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
 python threads support enabled
@@ -92,34 +89,19 @@ your server socket listen backlog is limited to 100 connections
 your mercy for graceful operations on workers is 60 seconds
 mapped 64128 bytes (62 KB) for 1 cores
 *** Operational MODE: single process ***
-WSGI app 0 (mountpoint='') ready in 0 seconds on interpreter 0x57994700 pid: 17673 (default app)
+WSGI app 0 (mountpoint='') ready in 1 seconds on interpreter 0x573e0700 pid: 22394 (default app)
 uWSGI running as root, you can use --uid/--gid/--chroot options
 *** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
 *** uWSGI is running in multiple interpreter mode ***
-spawned uWSGI worker 1 (and the only) (pid: 17673, cores: 1)
-[pid: 17673|app: 0|req: 1/1] 127.0.0.1 () {44 vars in 844 bytes} [Fri May 23 01:23:09 2025] GET /admin/ => generated 6212 bytes in 692 msecs (HTTP/1.1 200) 10 headers in 470 bytes (1 switches on core 0)
-[pid: 17673|app: 0|req: 2/2] 127.0.0.1 () {42 vars in 813 bytes} [Fri May 23 01:24:01 2025] GET /admin/ => generated 6212 bytes in 83 msecs (HTTP/1.1 200) 10 headers in 470 bytes (1 switches on core 0)
-[pid: 17673|app: 0|req: 3/3] 127.0.0.1 () {42 vars in 801 bytes} [Fri May 23 01:24:04 2025] GET / => generated 2098 bytes in 16 msecs (HTTP/1.1 200) 6 headers in 208 bytes (1 switches on core 0)
-[pid: 17673|app: 0|req: 4/4] 127.0.0.1 () {44 vars in 851 bytes} [Fri May 23 01:24:06 2025] GET /stream/ => generated 1538 bytes in 7 msecs (HTTP/1.1 200) 6 headers in 208 bytes (1 switches on core 0)
-Fri May 23 01:24:08 2025 - SIGPIPE: writing to a closed pipe/socket/fd (probably the client disconnected) on request /video_feed/ (ip 127.0.0.1) !!!
-Fri May 23 01:24:08 2025 - uwsgi_response_write_body_do(): Broken pipe [core/writer.c line 429] during GET /video_feed/ (127.0.0.1)
+spawned uWSGI worker 1 (and the only) (pid: 22394, cores: 1)
+[pid: 22394|app: 0|req: 1/1] 127.0.0.1 () {46 vars in 882 bytes} [Mon Jun  2 22:06:08 2025] GET /stream/ => generated 1538 bytes in 242 msecs (HTTP/1.1 200) 6 headers in 208 bytes (1 switches on core 0)
+Mon Jun  2 22:06:19 2025 - SIGPIPE: writing to a closed pipe/socket/fd (probably the client disconnected) on request /video_feed/ (ip 127.0.0.1) !!!
+Mon Jun  2 22:06:19 2025 - uwsgi_response_write_body_do(): Broken pipe [core/writer.c line 429] during GET /video_feed/ (127.0.0.1)
 OSError: write error
-[pid: 17673|app: 0|req: 5/5] 127.0.0.1 () {42 vars in 760 bytes} [Fri May 23 01:24:06 2025] GET /video_feed/ => generated 45579 bytes in 1607 msecs (HTTP/1.1 200) 5 headers in 203 bytes (2 switches on core 0)
-[pid: 17673|app: 0|req: 6/6] 127.0.0.1 () {44 vars in 893 bytes} [Fri May 23 01:38:23 2025] GET /admin/cameras/camera/add/ => generated 8856 bytes in 198 msecs (HTTP/1.1 200) 10 headers in 470 bytes (1 switches on core 0)
-[pid: 17673|app: 0|req: 7/7] 127.0.0.1 () {42 vars in 721 bytes} [Fri May 23 01:38:23 2025] GET /admin/jsi18n/ => generated 3343 bytes in 72 msecs (HTTP/1.1 200) 7 headers in 230 bytes (1 switches on core 0)
-[pid: 17673|app: 0|req: 8/8] 127.0.0.1 () {52 vars in 1094 bytes} [Fri May 23 01:38:29 2025] POST /admin/cameras/camera/add/ => generated 0 bytes in 91 msecs (HTTP/1.1 302) 11 headers in 635 bytes (1 switches on core 0)
-[pid: 17673|app: 0|req: 9/9] 127.0.0.1 () {46 vars in 1157 bytes} [Fri May 23 01:38:29 2025] GET /admin/cameras/camera/ => generated 9022 bytes in 227 msecs (HTTP/1.1 200) 11 headers in 568 bytes (1 switches on core 0)
-[pid: 17673|app: 0|req: 10/10] 127.0.0.1 () {42 vars in 717 bytes} [Fri May 23 01:38:29 2025] GET /admin/jsi18n/ => generated 3343 bytes in 52 msecs (HTTP/1.1 200) 7 headers in 230 bytes (1 switches on core 0)
-[pid: 17673|app: 0|req: 11/11] 127.0.0.1 () {44 vars in 832 bytes} [Fri May 23 01:38:33 2025] GET / => generated 2346 bytes in 15 msecs (HTTP/1.1 200) 6 headers in 208 bytes (1 switches on core 0)
-[pid: 17673|app: 0|req: 12/12] 127.0.0.1 () {44 vars in 918 bytes} [Fri May 23 01:38:40 2025] GET /admin/cameras/camera/2/change/ => generated 9080 bytes in 140 msecs (HTTP/1.1 200) 10 headers in 470 bytes (1 switches on core 0)
-[pid: 17673|app: 0|req: 13/13] 127.0.0.1 () {42 vars in 726 bytes} [Fri May 23 01:38:40 2025] GET /admin/jsi18n/ => generated 3343 bytes in 33 msecs (HTTP/1.1 200) 7 headers in 230 bytes (1 switches on core 0)
-[pid: 17673|app: 0|req: 14/14] 127.0.0.1 () {44 vars in 927 bytes} [Fri May 23 01:38:42 2025] GET /admin/cameras/camera/2/delete/ => generated 7398 bytes in 116 msecs (HTTP/1.1 200) 10 headers in 470 bytes (1 switches on core 0)
-[pid: 17673|app: 0|req: 15/15] 127.0.0.1 () {52 vars in 1107 bytes} [Fri May 23 01:38:44 2025] POST /admin/cameras/camera/2/delete/ => generated 0 bytes in 70 msecs (HTTP/1.1 302) 11 headers in 589 bytes (1 switches on core 0)
-[pid: 17673|app: 0|req: 16/16] 127.0.0.1 () {46 vars in 1116 bytes} [Fri May 23 01:38:44 2025] GET /admin/cameras/camera/ => generated 8771 bytes in 118 msecs (HTTP/1.1 200) 11 headers in 568 bytes (1 switches on core 0)
-[pid: 17673|app: 0|req: 17/17] 127.0.0.1 () {42 vars in 717 bytes} [Fri May 23 01:38:45 2025] GET /admin/jsi18n/ => generated 3343 bytes in 38 msecs (HTTP/1.1 200) 7 headers in 230 bytes (1 switches on core 0)
-[pid: 17673|app: 0|req: 18/18] 127.0.0.1 () {44 vars in 832 bytes} [Fri May 23 01:38:51 2025] GET / => generated 2098 bytes in 16 msecs (HTTP/1.1 200) 6 headers in 208 bytes (1 switches on core 0)
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               [uWSGI] getting INI configuration from /home/kolre2/Proektuvanya/Program/venv/bin/uwsgi.ini
-*** Starting uWSGI 2.0.29 (32bit) on [Fri May 23 02:46:54 2025] ***
+[pid: 22394|app: 0|req: 2/2] 127.0.0.1 () {42 vars in 760 bytes} [Mon Jun  2 22:06:08 2025] GET /video_feed/ => generated 9235158 bytes in 10869 msecs (HTTP/1.1 200) 5 headers in 203 bytes (143 switches on core 0)
+[pid: 22394|app: 0|req: 3/3] 127.0.0.1 () {44 vars in 832 bytes} [Mon Jun  2 22:08:51 2025] GET / => generated 2348 bytes in 26 msecs (HTTP/1.1 200) 6 headers in 208 bytes (1 switches on core 0)
+[uWSGI] getting INI configuration from /home/kolre2/Proektuvanya/Program/venv/bin/uwsgi.ini
+*** Starting uWSGI 2.0.29 (32bit) on [Mon Jun  2 23:20:52 2025] ***
 compiled with version: 10.2.1 20210110 on 22 May 2025 02:56:22
 os: Linux-5.10.0-15-amd64 #1 SMP Debian 5.10.120-1 (2022-06-09)
 nodename: raspberry
@@ -133,7 +115,7 @@ uWSGI running as root, you can use --uid/--gid/--chroot options
 *** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
 chdir() to /home/kolre2/Proektuvanya/Program
 *** WARNING: you are running uWSGI without its master process manager ***
-your processes number limit is 7476
+your processes number limit is 11868
 your memory page size is 4096 bytes
 detected max file descriptor number: 1024
 lock engine: pthread robust mutexes
@@ -144,7 +126,7 @@ uWSGI running as root, you can use --uid/--gid/--chroot options
 Python version: 3.9.2 (default, Mar 20 2025, 02:07:39)  [GCC 10.2.1 20210110]
 PEP 405 virtualenv detected: /home/kolre2/Proektuvanya/Program/venv
 Set PythonHome to /home/kolre2/Proektuvanya/Program/venv
-Python main interpreter initialized at 0x57768700
+Python main interpreter initialized at 0x585f6700
 uWSGI running as root, you can use --uid/--gid/--chroot options
 *** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
 python threads support enabled
@@ -152,23 +134,681 @@ your server socket listen backlog is limited to 100 connections
 your mercy for graceful operations on workers is 60 seconds
 mapped 64128 bytes (62 KB) for 1 cores
 *** Operational MODE: single process ***
-WSGI app 0 (mountpoint='') ready in 2 seconds on interpreter 0x57768700 pid: 1126 (default app)
+WSGI app 0 (mountpoint='') ready in 0 seconds on interpreter 0x585f6700 pid: 1351 (default app)
 uWSGI running as root, you can use --uid/--gid/--chroot options
 *** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
 *** uWSGI is running in multiple interpreter mode ***
-spawned uWSGI worker 1 (and the only) (pid: 1126, cores: 1)
-[pid: 1126|app: 0|req: 1/1] 127.0.0.1 () {42 vars in 801 bytes} [Fri May 23 01:48:53 2025] GET / => generated 2098 bytes in 2866 msecs (HTTP/1.1 200) 6 headers in 208 bytes (1 switches on core 0)
+spawned uWSGI worker 1 (and the only) (pid: 1351, cores: 1)
+[uWSGI] getting INI configuration from /home/kolre2/Proektuvanya/Program/venv/bin/uwsgi.ini
+*** Starting uWSGI 2.0.29 (32bit) on [Mon Jun  2 23:23:24 2025] ***
+compiled with version: 10.2.1 20210110 on 22 May 2025 02:56:22
+os: Linux-5.10.0-15-amd64 #1 SMP Debian 5.10.120-1 (2022-06-09)
+nodename: raspberry
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 1
+current working directory: /home/kolre2/Proektuvanya/Program/video_admin
+detected binary path: /home/kolre2/Proektuvanya/Program/venv/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+chdir() to /home/kolre2/Proektuvanya/Program
+*** WARNING: you are running uWSGI without its master process manager ***
+your processes number limit is 11868
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to TCP address 127.0.0.1:8000 fd 3
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+Python version: 3.9.2 (default, Mar 20 2025, 02:07:39)  [GCC 10.2.1 20210110]
+PEP 405 virtualenv detected: /home/kolre2/Proektuvanya/Program/venv
+Set PythonHome to /home/kolre2/Proektuvanya/Program/venv
+Python main interpreter initialized at 0x58098700
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 64128 bytes (62 KB) for 1 cores
+*** Operational MODE: single process ***
+WSGI app 0 (mountpoint='') ready in 1 seconds on interpreter 0x58098700 pid: 1375 (default app)
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI worker 1 (and the only) (pid: 1375, cores: 1)
 Not Found: /favicon.ico
-[pid: 1126|app: 0|req: 2/2] 127.0.0.1 () {42 vars in 753 bytes} [Fri May 23 01:48:57 2025] GET /favicon.ico => generated 2633 bytes in 107 msecs (HTTP/1.1 404) 6 headers in 215 bytes (1 switches on core 0)
-[pid: 1126|app: 0|req: 3/3] 127.0.0.1 () {44 vars in 832 bytes} [Fri May 23 01:48:59 2025] GET / => generated 2098 bytes in 4 msecs (HTTP/1.1 200) 6 headers in 208 bytes (1 switches on core 0)
-[pid: 1126|app: 0|req: 4/4] 127.0.0.1 () {44 vars in 851 bytes} [Fri May 23 01:49:01 2025] GET /stream/ => generated 1538 bytes in 52 msecs (HTTP/1.1 200) 6 headers in 208 bytes (1 switches on core 0)
-[pid: 1126|app: 0|req: 5/5] 127.0.0.1 () {44 vars in 909 bytes} [Fri May 23 01:49:01 2025] GET /admin/cameras/camera/ => generated 8617 bytes in 1087 msecs (HTTP/1.1 200) 10 headers in 470 bytes (1 switches on core 0)
-[ WARN:0@7.057] global cap_v4l.cpp:913 open VIDEOIO(V4L2:/dev/video0): can't open camera by index
-[ERROR:0@7.062] global obsensor_uvc_stream_channel.cpp:158 getStreamChannelGroup Camera index out of range
-[pid: 1126|app: 0|req: 6/6] 127.0.0.1 () {42 vars in 760 bytes} [Fri May 23 01:49:02 2025] GET /video_feed/ => generated 0 bytes in 30 msecs (HTTP/1.1 200) 5 headers in 203 bytes (0 switches on core 0)
-[pid: 1126|app: 0|req: 7/7] 127.0.0.1 () {42 vars in 717 bytes} [Fri May 23 01:49:02 2025] GET /admin/jsi18n/ => generated 3343 bytes in 66 msecs (HTTP/1.1 200) 7 headers in 230 bytes (1 switches on core 0)
-[pid: 1126|app: 0|req: 8/8] 127.0.0.1 () {46 vars in 882 bytes} [Fri May 23 01:49:18 2025] GET /stream/ => generated 1538 bytes in 3 msecs (HTTP/1.1 200) 6 headers in 208 bytes (1 switches on core 0)
-Fri May 23 01:49:21 2025 - SIGPIPE: writing to a closed pipe/socket/fd (probably the client disconnected) on request /video_feed/ (ip 127.0.0.1) !!!
-Fri May 23 01:49:21 2025 - uwsgi_response_write_body_do(): Broken pipe [core/writer.c line 429] during GET /video_feed/ (127.0.0.1)
+[pid: 1375|app: 0|req: 1/1] 127.0.0.1 () {42 vars in 753 bytes} [Mon Jun  2 22:30:41 2025] GET /favicon.ico => generated 2633 bytes in 514 msecs (HTTP/1.1 404) 6 headers in 215 bytes (1 switches on core 0)
+[uWSGI] getting INI configuration from /home/kolre2/Proektuvanya/Program/venv/bin/uwsgi.ini
+*** Starting uWSGI 2.0.29 (32bit) on [Mon Jun  2 23:45:05 2025] ***
+compiled with version: 10.2.1 20210110 on 22 May 2025 02:56:22
+os: Linux-5.10.0-15-amd64 #1 SMP Debian 5.10.120-1 (2022-06-09)
+nodename: raspberry
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 1
+current working directory: /home/kolre2/Proektuvanya/Program/video_admin
+detected binary path: /home/kolre2/Proektuvanya/Program/venv/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+chdir() to /home/kolre2/Proektuvanya/Program
+*** WARNING: you are running uWSGI without its master process manager ***
+your processes number limit is 11868
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to TCP address 127.0.0.1:8000 fd 3
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+Python version: 3.9.2 (default, Mar 20 2025, 02:07:39)  [GCC 10.2.1 20210110]
+PEP 405 virtualenv detected: /home/kolre2/Proektuvanya/Program/venv
+Set PythonHome to /home/kolre2/Proektuvanya/Program/venv
+Python main interpreter initialized at 0x5679b700
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 64128 bytes (62 KB) for 1 cores
+*** Operational MODE: single process ***
+WSGI app 0 (mountpoint='') ready in 1 seconds on interpreter 0x5679b700 pid: 1418 (default app)
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI worker 1 (and the only) (pid: 1418, cores: 1)
+Not Found: /favicon.ico
+[pid: 1418|app: 0|req: 1/1] 127.0.0.1 () {42 vars in 753 bytes} [Mon Jun  2 22:54:02 2025] GET /favicon.ico => generated 2633 bytes in 489 msecs (HTTP/1.1 404) 6 headers in 215 bytes (1 switches on core 0)
+[pid: 1418|app: 0|req: 2/2] 127.0.0.1 () {44 vars in 832 bytes} [Mon Jun  2 23:40:13 2025] GET / => generated 2348 bytes in 82 msecs (HTTP/1.1 200) 6 headers in 208 bytes (1 switches on core 0)
+[uWSGI] getting INI configuration from /home/kolre2/Proektuvanya/Program/venv/bin/uwsgi.ini
+*** Starting uWSGI 2.0.29 (32bit) on [Tue Jun  3 00:40:32 2025] ***
+compiled with version: 10.2.1 20210110 on 22 May 2025 02:56:22
+os: Linux-5.10.0-15-amd64 #1 SMP Debian 5.10.120-1 (2022-06-09)
+nodename: raspberry
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 1
+current working directory: /home/kolre2/Proektuvanya/Program/video_admin
+detected binary path: /home/kolre2/Proektuvanya/Program/venv/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+chdir() to /home/kolre2/Proektuvanya/Program
+*** WARNING: you are running uWSGI without its master process manager ***
+your processes number limit is 11868
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to TCP address 127.0.0.1:8000 fd 3
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+Python version: 3.9.2 (default, Mar 20 2025, 02:07:39)  [GCC 10.2.1 20210110]
+PEP 405 virtualenv detected: /home/kolre2/Proektuvanya/Program/venv
+Set PythonHome to /home/kolre2/Proektuvanya/Program/venv
+Python main interpreter initialized at 0x57ae4700
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 64128 bytes (62 KB) for 1 cores
+*** Operational MODE: single process ***
+WSGI app 0 (mountpoint='') ready in 1 seconds on interpreter 0x57ae4700 pid: 23190 (default app)
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI worker 1 (and the only) (pid: 23190, cores: 1)
+[pid: 23190|app: 0|req: 1/1] 127.0.0.1 () {44 vars in 832 bytes} [Mon Jun  2 23:40:33 2025] GET / => generated 2294 bytes in 636 msecs (HTTP/1.1 200) 6 headers in 208 bytes (1 switches on core 0)
+[pid: 23190|app: 0|req: 2/2] 127.0.0.1 () {44 vars in 837 bytes} [Mon Jun  2 23:40:35 2025] GET / => generated 2294 bytes in 4 msecs (HTTP/1.1 200) 6 headers in 208 bytes (1 switches on core 0)
+[pid: 23190|app: 0|req: 3/3] 127.0.0.1 () {44 vars in 837 bytes} [Mon Jun  2 23:40:39 2025] GET / => generated 2294 bytes in 3 msecs (HTTP/1.1 200) 6 headers in 208 bytes (1 switches on core 0)
+[uWSGI] getting INI configuration from /home/kolre2/Proektuvanya/Program/venv/bin/uwsgi.ini
+*** Starting uWSGI 2.0.29 (32bit) on [Tue Jun  3 00:41:14 2025] ***
+compiled with version: 10.2.1 20210110 on 22 May 2025 02:56:22
+os: Linux-5.10.0-15-amd64 #1 SMP Debian 5.10.120-1 (2022-06-09)
+nodename: raspberry
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 1
+current working directory: /home/kolre2/Proektuvanya/Program/video_admin
+detected binary path: /home/kolre2/Proektuvanya/Program/venv/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+chdir() to /home/kolre2/Proektuvanya/Program
+*** WARNING: you are running uWSGI without its master process manager ***
+your processes number limit is 11868
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to TCP address 127.0.0.1:8000 fd 3
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+Python version: 3.9.2 (default, Mar 20 2025, 02:07:39)  [GCC 10.2.1 20210110]
+PEP 405 virtualenv detected: /home/kolre2/Proektuvanya/Program/venv
+Set PythonHome to /home/kolre2/Proektuvanya/Program/venv
+Python main interpreter initialized at 0x5732c700
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 64128 bytes (62 KB) for 1 cores
+*** Operational MODE: single process ***
+WSGI app 0 (mountpoint='') ready in 1 seconds on interpreter 0x5732c700 pid: 23223 (default app)
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI worker 1 (and the only) (pid: 23223, cores: 1)
+[pid: 23223|app: 0|req: 1/1] 127.0.0.1 () {44 vars in 832 bytes} [Mon Jun  2 23:41:15 2025] GET / => generated 2348 bytes in 441 msecs (HTTP/1.1 200) 6 headers in 208 bytes (1 switches on core 0)
+[pid: 23223|app: 0|req: 2/2] 127.0.0.1 () {44 vars in 851 bytes} [Mon Jun  2 23:41:18 2025] GET /stream/ => generated 1538 bytes in 12 msecs (HTTP/1.1 200) 6 headers in 208 bytes (1 switches on core 0)
+[ WARN:0@2.218] global cap_v4l.cpp:913 open VIDEOIO(V4L2:/dev/video0): can't open camera by index
+[ERROR:0@2.218] global obsensor_uvc_stream_channel.cpp:158 getStreamChannelGroup Camera index out of range
+[pid: 23223|app: 0|req: 3/3] 127.0.0.1 () {42 vars in 760 bytes} [Mon Jun  2 23:41:18 2025] GET /video_feed/ => generated 0 bytes in 5 msecs (HTTP/1.1 200) 5 headers in 203 bytes (0 switches on core 0)
+[uWSGI] getting INI configuration from /home/kolre2/Proektuvanya/Program/venv/bin/uwsgi.ini
+*** Starting uWSGI 2.0.29 (32bit) on [Tue Jun  3 00:42:58 2025] ***
+compiled with version: 10.2.1 20210110 on 22 May 2025 02:56:22
+os: Linux-5.10.0-15-amd64 #1 SMP Debian 5.10.120-1 (2022-06-09)
+nodename: raspberry
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 1
+current working directory: /home/kolre2/Proektuvanya/Program/video_admin
+detected binary path: /home/kolre2/Proektuvanya/Program/venv/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+chdir() to /home/kolre2/Proektuvanya/Program
+*** WARNING: you are running uWSGI without its master process manager ***
+your processes number limit is 11868
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to TCP address 127.0.0.1:8000 fd 3
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+Python version: 3.9.2 (default, Mar 20 2025, 02:07:39)  [GCC 10.2.1 20210110]
+PEP 405 virtualenv detected: /home/kolre2/Proektuvanya/Program/venv
+Set PythonHome to /home/kolre2/Proektuvanya/Program/venv
+Python main interpreter initialized at 0x5806b700
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 64128 bytes (62 KB) for 1 cores
+*** Operational MODE: single process ***
+WSGI app 0 (mountpoint='') ready in 1 seconds on interpreter 0x5806b700 pid: 23252 (default app)
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI worker 1 (and the only) (pid: 23252, cores: 1)
+[pid: 23252|app: 0|req: 1/1] 127.0.0.1 () {44 vars in 832 bytes} [Mon Jun  2 23:42:59 2025] GET / => generated 2348 bytes in 419 msecs (HTTP/1.1 200) 6 headers in 208 bytes (1 switches on core 0)
+[pid: 23252|app: 0|req: 2/2] 127.0.0.1 () {44 vars in 851 bytes} [Mon Jun  2 23:43:02 2025] GET /stream/ => generated 1538 bytes in 12 msecs (HTTP/1.1 200) 6 headers in 208 bytes (1 switches on core 0)
+[ WARN:0@2.637] global cap_v4l.cpp:913 open VIDEOIO(V4L2:/dev/video0): can't open camera by index
+[ERROR:0@2.637] global obsensor_uvc_stream_channel.cpp:158 getStreamChannelGroup Camera index out of range
+[pid: 23252|app: 0|req: 3/3] 127.0.0.1 () {42 vars in 760 bytes} [Mon Jun  2 23:43:02 2025] GET /video_feed/ => generated 0 bytes in 1 msecs (HTTP/1.1 200) 5 headers in 203 bytes (0 switches on core 0)
+[pid: 23252|app: 0|req: 4/4] 127.0.0.1 () {46 vars in 882 bytes} [Mon Jun  2 23:43:13 2025] GET /stream/ => generated 1538 bytes in 2 msecs (HTTP/1.1 200) 6 headers in 208 bytes (1 switches on core 0)
+Mon Jun  2 23:43:39 2025 - SIGPIPE: writing to a closed pipe/socket/fd (probably the client disconnected) on request /video_feed/ (ip 127.0.0.1) !!!
+Mon Jun  2 23:43:39 2025 - uwsgi_response_write_body_do(): Broken pipe [core/writer.c line 429] during GET /video_feed/ (127.0.0.1)
 OSError: write error
-[pid: 1126|app: 0|req: 9/9] 127.0.0.1 () {42 vars in 760 bytes} [Fri May 23 01:49:18 2025] GET /video_feed/ => generated 375421 bytes in 3044 msecs (HTTP/1.1 200) 5 headers in 203 bytes (17 switches on core 0)
+[pid: 23252|app: 0|req: 5/5] 127.0.0.1 () {42 vars in 760 bytes} [Mon Jun  2 23:43:13 2025] GET /video_feed/ => generated 14581016 bytes in 25368 msecs (HTTP/1.1 200) 5 headers in 203 bytes (285 switches on core 0)
+[uWSGI] getting INI configuration from /home/kolre2/Proektuvanya/Program/venv/bin/uwsgi.ini
+*** Starting uWSGI 2.0.29 (32bit) on [Tue Jun  3 00:45:05 2025] ***
+compiled with version: 10.2.1 20210110 on 22 May 2025 02:56:22
+os: Linux-5.10.0-15-amd64 #1 SMP Debian 5.10.120-1 (2022-06-09)
+nodename: raspberry
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 1
+current working directory: /home/kolre2/Proektuvanya/Program/video_admin
+detected binary path: /home/kolre2/Proektuvanya/Program/venv/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+chdir() to /home/kolre2/Proektuvanya/Program
+*** WARNING: you are running uWSGI without its master process manager ***
+your processes number limit is 11868
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to TCP address 127.0.0.1:8000 fd 3
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+Python version: 3.9.2 (default, Mar 20 2025, 02:07:39)  [GCC 10.2.1 20210110]
+PEP 405 virtualenv detected: /home/kolre2/Proektuvanya/Program/venv
+Set PythonHome to /home/kolre2/Proektuvanya/Program/venv
+Python main interpreter initialized at 0x57d64700
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 64128 bytes (62 KB) for 1 cores
+*** Operational MODE: single process ***
+WSGI app 0 (mountpoint='') ready in 1 seconds on interpreter 0x57d64700 pid: 23296 (default app)
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI worker 1 (and the only) (pid: 23296, cores: 1)
+[pid: 23296|app: 0|req: 1/1] 127.0.0.1 () {44 vars in 832 bytes} [Mon Jun  2 23:45:06 2025] GET / => generated 2348 bytes in 448 msecs (HTTP/1.1 200) 6 headers in 208 bytes (1 switches on core 0)
+[pid: 23296|app: 0|req: 2/2] 127.0.0.1 () {44 vars in 851 bytes} [Mon Jun  2 23:45:11 2025] GET /stream/ => generated 1538 bytes in 7 msecs (HTTP/1.1 200) 6 headers in 208 bytes (1 switches on core 0)
+Mon Jun  2 23:45:45 2025 - SIGPIPE: writing to a closed pipe/socket/fd (probably the client disconnected) on request /video_feed/ (ip 127.0.0.1) !!!
+Mon Jun  2 23:45:45 2025 - uwsgi_response_write_body_do(): Broken pipe [core/writer.c line 429] during GET /video_feed/ (127.0.0.1)
+OSError: write error
+[pid: 23296|app: 0|req: 3/3] 127.0.0.1 () {42 vars in 760 bytes} [Mon Jun  2 23:45:11 2025] GET /video_feed/ => generated 20247661 bytes in 33728 msecs (HTTP/1.1 200) 5 headers in 203 bytes (389 switches on core 0)
+[uWSGI] getting INI configuration from /home/kolre2/Proektuvanya/Program/venv/bin/uwsgi.ini
+*** Starting uWSGI 2.0.29 (32bit) on [Tue Jun  3 00:46:28 2025] ***
+compiled with version: 10.2.1 20210110 on 22 May 2025 02:56:22
+os: Linux-5.10.0-15-amd64 #1 SMP Debian 5.10.120-1 (2022-06-09)
+nodename: raspberry
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 1
+current working directory: /home/kolre2/Proektuvanya/Program/video_admin
+detected binary path: /home/kolre2/Proektuvanya/Program/venv/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+chdir() to /home/kolre2/Proektuvanya/Program
+*** WARNING: you are running uWSGI without its master process manager ***
+your processes number limit is 11868
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to TCP address 127.0.0.1:8000 fd 3
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+Python version: 3.9.2 (default, Mar 20 2025, 02:07:39)  [GCC 10.2.1 20210110]
+PEP 405 virtualenv detected: /home/kolre2/Proektuvanya/Program/venv
+Set PythonHome to /home/kolre2/Proektuvanya/Program/venv
+Python main interpreter initialized at 0x58045700
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 64128 bytes (62 KB) for 1 cores
+*** Operational MODE: single process ***
+WSGI app 0 (mountpoint='') ready in 0 seconds on interpreter 0x58045700 pid: 23322 (default app)
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI worker 1 (and the only) (pid: 23322, cores: 1)
+[pid: 23322|app: 0|req: 1/1] 127.0.0.1 () {44 vars in 832 bytes} [Mon Jun  2 23:46:28 2025] GET / => generated 2348 bytes in 432 msecs (HTTP/1.1 200) 6 headers in 208 bytes (1 switches on core 0)
+[pid: 23322|app: 0|req: 2/2] 127.0.0.1 () {44 vars in 832 bytes} [Mon Jun  2 23:46:30 2025] GET / => generated 2348 bytes in 10 msecs (HTTP/1.1 200) 6 headers in 208 bytes (1 switches on core 0)
+[pid: 23322|app: 0|req: 3/3] 127.0.0.1 () {44 vars in 851 bytes} [Mon Jun  2 23:46:31 2025] GET /stream/ => generated 1538 bytes in 14 msecs (HTTP/1.1 200) 6 headers in 208 bytes (1 switches on core 0)
+Mon Jun  2 23:46:58 2025 - SIGPIPE: writing to a closed pipe/socket/fd (probably the client disconnected) on request /video_feed/ (ip 127.0.0.1) !!!
+Mon Jun  2 23:46:58 2025 - uwsgi_response_write_body_do(): Broken pipe [core/writer.c line 429] during GET /video_feed/ (127.0.0.1)
+OSError: write error
+[pid: 23322|app: 0|req: 4/4] 127.0.0.1 () {42 vars in 760 bytes} [Mon Jun  2 23:46:31 2025] GET /video_feed/ => generated 15672150 bytes in 27133 msecs (HTTP/1.1 200) 5 headers in 203 bytes (296 switches on core 0)
+[uWSGI] getting INI configuration from /home/kolre2/Proektuvanya/Program/venv/bin/uwsgi.ini
+*** Starting uWSGI 2.0.29 (32bit) on [Tue Jun  3 00:49:35 2025] ***
+compiled with version: 10.2.1 20210110 on 22 May 2025 02:56:22
+os: Linux-5.10.0-15-amd64 #1 SMP Debian 5.10.120-1 (2022-06-09)
+nodename: raspberry
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 1
+current working directory: /home/kolre2/Proektuvanya/Program/video_admin
+detected binary path: /home/kolre2/Proektuvanya/Program/venv/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+chdir() to /home/kolre2/Proektuvanya/Program
+*** WARNING: you are running uWSGI without its master process manager ***
+your processes number limit is 11868
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to TCP address 127.0.0.1:8000 fd 3
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+Python version: 3.9.2 (default, Mar 20 2025, 02:07:39)  [GCC 10.2.1 20210110]
+PEP 405 virtualenv detected: /home/kolre2/Proektuvanya/Program/venv
+Set PythonHome to /home/kolre2/Proektuvanya/Program/venv
+Python main interpreter initialized at 0x57723700
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 64128 bytes (62 KB) for 1 cores
+*** Operational MODE: single process ***
+WSGI app 0 (mountpoint='') ready in 1 seconds on interpreter 0x57723700 pid: 23374 (default app)
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI worker 1 (and the only) (pid: 23374, cores: 1)
+[pid: 23374|app: 0|req: 1/1] 127.0.0.1 () {44 vars in 832 bytes} [Mon Jun  2 23:49:36 2025] GET / => generated 2294 bytes in 1446 msecs (HTTP/1.1 200) 6 headers in 208 bytes (1 switches on core 0)
+[pid: 23374|app: 0|req: 2/2] 127.0.0.1 () {44 vars in 832 bytes} [Mon Jun  2 23:49:39 2025] GET / => generated 2294 bytes in 3 msecs (HTTP/1.1 200) 6 headers in 208 bytes (1 switches on core 0)
+[pid: 23374|app: 0|req: 3/3] 127.0.0.1 () {44 vars in 837 bytes} [Mon Jun  2 23:49:41 2025] GET / => generated 2294 bytes in 3 msecs (HTTP/1.1 200) 6 headers in 208 bytes (1 switches on core 0)
+!!! uWSGI process 23374 got Segmentation Fault !!!
+*** backtrace of 23374 ***
+/home/kolre2/Proektuvanya/Program/venv/bin/uwsgi(uwsgi_backtrace+0x32) [0x56648772]
+/home/kolre2/Proektuvanya/Program/venv/bin/uwsgi(uwsgi_segfault+0x35) [0x56648b55]
+linux-gate.so.1(__kernel_sigreturn+0) [0xf7fb0570]
+/lib/i386-linux-gnu/libc.so.6(+0x7c873) [0xf770d873]
+/lib/i386-linux-gnu/libc.so.6(+0x7d0a7) [0xf770e0a7]
+/lib/i386-linux-gnu/libpython3.9.so.1.0(+0xd7658) [0xf7950658]
+/lib/i386-linux-gnu/libpython3.9.so.1.0(PyMem_RawFree+0x1d) [0xf79502bd]
+/lib/i386-linux-gnu/libpython3.9.so.1.0(+0xd7771) [0xf7950771]
+/lib/i386-linux-gnu/libpython3.9.so.1.0(PyObject_Free+0x1d) [0xf79503dd]
+/lib/i386-linux-gnu/libpython3.9.so.1.0(+0xec709) [0xf7965709]
+/lib/i386-linux-gnu/libpython3.9.so.1.0(+0x1c8399) [0xf7a41399]
+/lib/i386-linux-gnu/libpython3.9.so.1.0(_PyGC_CollectNoFail+0x4f) [0xf7a4192f]
+/lib/i386-linux-gnu/libpython3.9.so.1.0(+0x1857e7) [0xf79fe7e7]
+/lib/i386-linux-gnu/libpython3.9.so.1.0(Py_FinalizeEx+0x22c) [0xf7a1efdc]
+/lib/i386-linux-gnu/libpython3.9.so.1.0(Py_Finalize+0x14) [0xf7a1f294]
+/home/kolre2/Proektuvanya/Program/venv/bin/uwsgi(uwsgi_python_atexit+0xe6) [0x566554e6]
+/home/kolre2/Proektuvanya/Program/venv/bin/uwsgi(uwsgi_plugins_atexit+0x6b) [0x5664567b]
+/lib/i386-linux-gnu/libc.so.6(+0x3388e) [0xf76c488e]
+/lib/i386-linux-gnu/libc.so.6(+0x33a61) [0xf76c4a61]
+/home/kolre2/Proektuvanya/Program/venv/bin/uwsgi(+0x23295) [0x565f6295]
+/home/kolre2/Proektuvanya/Program/venv/bin/uwsgi(end_me+0x30) [0x566456d0]
+linux-gate.so.1(__kernel_sigreturn+0) [0xf7fb0570]
+linux-gate.so.1(__kernel_vsyscall+0x9) [0xf7fb0559]
+/lib/i386-linux-gnu/libc.so.6(epoll_wait+0x2c) [0xf779083c]
+/home/kolre2/Proektuvanya/Program/venv/bin/uwsgi(event_queue_wait+0x2f) [0x5663a95f]
+/home/kolre2/Proektuvanya/Program/venv/bin/uwsgi(wsgi_req_accept+0x102) [0x565f3532]
+/home/kolre2/Proektuvanya/Program/venv/bin/uwsgi(simple_loop_run+0xd1) [0x56644411]
+/home/kolre2/Proektuvanya/Program/venv/bin/uwsgi(simple_loop+0x8a) [0x5664452a]
+/home/kolre2/Proektuvanya/Program/venv/bin/uwsgi(uwsgi_ignition+0x1e2) [0x56648e12]
+/home/kolre2/Proektuvanya/Program/venv/bin/uwsgi(uwsgi_worker_run+0x270) [0x5664d7a0]
+/home/kolre2/Proektuvanya/Program/venv/bin/uwsgi(uwsgi_run+0x464) [0x5664dcd4]
+/home/kolre2/Proektuvanya/Program/venv/bin/uwsgi(+0x1f894) [0x565f2894]
+/lib/i386-linux-gnu/libc.so.6(__libc_start_main+0x106) [0xf76abed6]
+/home/kolre2/Proektuvanya/Program/venv/bin/uwsgi(_start+0x31) [0x565f28d1]
+*** end of backtrace ***
+[uWSGI] getting INI configuration from /home/kolre2/Proektuvanya/Program/venv/bin/uwsgi.ini
+*** Starting uWSGI 2.0.29 (32bit) on [Tue Jun  3 00:50:15 2025] ***
+compiled with version: 10.2.1 20210110 on 22 May 2025 02:56:22
+os: Linux-5.10.0-15-amd64 #1 SMP Debian 5.10.120-1 (2022-06-09)
+nodename: raspberry
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 1
+current working directory: /home/kolre2/Proektuvanya/Program/video_admin
+detected binary path: /home/kolre2/Proektuvanya/Program/venv/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+chdir() to /home/kolre2/Proektuvanya/Program
+*** WARNING: you are running uWSGI without its master process manager ***
+your processes number limit is 11868
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to TCP address 127.0.0.1:8000 fd 3
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+Python version: 3.9.2 (default, Mar 20 2025, 02:07:39)  [GCC 10.2.1 20210110]
+PEP 405 virtualenv detected: /home/kolre2/Proektuvanya/Program/venv
+Set PythonHome to /home/kolre2/Proektuvanya/Program/venv
+Python main interpreter initialized at 0x573af700
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 64128 bytes (62 KB) for 1 cores
+*** Operational MODE: single process ***
+WSGI app 0 (mountpoint='') ready in 1 seconds on interpreter 0x573af700 pid: 23394 (default app)
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI worker 1 (and the only) (pid: 23394, cores: 1)
+Internal Server Error: /
+Traceback (most recent call last):
+  File "/home/kolre2/Proektuvanya/Program/venv/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/kolre2/Proektuvanya/Program/venv/lib/python3.9/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "./cameras/views.py", line 14, in camera_list
+    cam.stream_url = request.build_absolute_uri(reverse('camera_stream'))  # or with ID if needed
+NameError: name 'reverse' is not defined
+[pid: 23394|app: 0|req: 1/1] 127.0.0.1 () {44 vars in 832 bytes} [Mon Jun  2 23:50:16 2025] GET / => generated 54115 bytes in 1814 msecs (HTTP/1.1 500) 7 headers in 242 bytes (1 switches on core 0)
+Internal Server Error: /
+Traceback (most recent call last):
+  File "/home/kolre2/Proektuvanya/Program/venv/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/kolre2/Proektuvanya/Program/venv/lib/python3.9/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "./cameras/views.py", line 14, in camera_list
+    cam.stream_url = request.build_absolute_uri(reverse('camera_stream'))  # or with ID if needed
+NameError: name 'reverse' is not defined
+[pid: 23394|app: 0|req: 2/2] 127.0.0.1 () {44 vars in 832 bytes} [Mon Jun  2 23:50:20 2025] GET / => generated 54115 bytes in 120 msecs (HTTP/1.1 500) 7 headers in 242 bytes (1 switches on core 0)
+!!! uWSGI process 23394 got Segmentation Fault !!!
+*** backtrace of 23394 ***
+/home/kolre2/Proektuvanya/Program/venv/bin/uwsgi(uwsgi_backtrace+0x32) [0x565da772]
+/home/kolre2/Proektuvanya/Program/venv/bin/uwsgi(uwsgi_segfault+0x35) [0x565dab55]
+linux-gate.so.1(__kernel_sigreturn+0) [0xf7f8a570]
+/lib/i386-linux-gnu/libc.so.6(+0x7c873) [0xf76e7873]
+/lib/i386-linux-gnu/libc.so.6(+0x7d0a7) [0xf76e80a7]
+/lib/i386-linux-gnu/libpython3.9.so.1.0(+0xd7658) [0xf792a658]
+/lib/i386-linux-gnu/libpython3.9.so.1.0(PyMem_RawFree+0x1d) [0xf792a2bd]
+/lib/i386-linux-gnu/libpython3.9.so.1.0(+0xd7771) [0xf792a771]
+/lib/i386-linux-gnu/libpython3.9.so.1.0(PyObject_Free+0x1d) [0xf792a3dd]
+/lib/i386-linux-gnu/libpython3.9.so.1.0(+0xec709) [0xf793f709]
+/lib/i386-linux-gnu/libpython3.9.so.1.0(+0x1c8399) [0xf7a1b399]
+/lib/i386-linux-gnu/libpython3.9.so.1.0(_PyGC_CollectNoFail+0x4f) [0xf7a1b92f]
+/lib/i386-linux-gnu/libpython3.9.so.1.0(+0x1857e7) [0xf79d87e7]
+/lib/i386-linux-gnu/libpython3.9.so.1.0(Py_FinalizeEx+0x22c) [0xf79f8fdc]
+/lib/i386-linux-gnu/libpython3.9.so.1.0(Py_Finalize+0x14) [0xf79f9294]
+/home/kolre2/Proektuvanya/Program/venv/bin/uwsgi(uwsgi_python_atexit+0xe6) [0x565e74e6]
+/home/kolre2/Proektuvanya/Program/venv/bin/uwsgi(uwsgi_plugins_atexit+0x6b) [0x565d767b]
+/lib/i386-linux-gnu/libc.so.6(+0x3388e) [0xf769e88e]
+/lib/i386-linux-gnu/libc.so.6(+0x33a61) [0xf769ea61]
+/home/kolre2/Proektuvanya/Program/venv/bin/uwsgi(+0x23295) [0x56588295]
+/home/kolre2/Proektuvanya/Program/venv/bin/uwsgi(end_me+0x30) [0x565d76d0]
+linux-gate.so.1(__kernel_sigreturn+0) [0xf7f8a570]
+linux-gate.so.1(__kernel_vsyscall+0x9) [0xf7f8a559]
+/lib/i386-linux-gnu/libc.so.6(epoll_wait+0x2c) [0xf776a83c]
+/home/kolre2/Proektuvanya/Program/venv/bin/uwsgi(event_queue_wait+0x2f) [0x565cc95f]
+/home/kolre2/Proektuvanya/Program/venv/bin/uwsgi(wsgi_req_accept+0x102) [0x56585532]
+/home/kolre2/Proektuvanya/Program/venv/bin/uwsgi(simple_loop_run+0xd1) [0x565d6411]
+/home/kolre2/Proektuvanya/Program/venv/bin/uwsgi(simple_loop+0x8a) [0x565d652a]
+/home/kolre2/Proektuvanya/Program/venv/bin/uwsgi(uwsgi_ignition+0x1e2) [0x565dae12]
+/home/kolre2/Proektuvanya/Program/venv/bin/uwsgi(uwsgi_worker_run+0x270) [0x565df7a0]
+/home/kolre2/Proektuvanya/Program/venv/bin/uwsgi(uwsgi_run+0x464) [0x565dfcd4]
+/home/kolre2/Proektuvanya/Program/venv/bin/uwsgi(+0x1f894) [0x56584894]
+/lib/i386-linux-gnu/libc.so.6(__libc_start_main+0x106) [0xf7685ed6]
+/home/kolre2/Proektuvanya/Program/venv/bin/uwsgi(_start+0x31) [0x565848d1]
+*** end of backtrace ***
+[uWSGI] getting INI configuration from /home/kolre2/Proektuvanya/Program/venv/bin/uwsgi.ini
+*** Starting uWSGI 2.0.29 (32bit) on [Tue Jun  3 00:52:13 2025] ***
+compiled with version: 10.2.1 20210110 on 22 May 2025 02:56:22
+os: Linux-5.10.0-15-amd64 #1 SMP Debian 5.10.120-1 (2022-06-09)
+nodename: raspberry
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 1
+current working directory: /home/kolre2/Proektuvanya/Program/video_admin
+detected binary path: /home/kolre2/Proektuvanya/Program/venv/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+chdir() to /home/kolre2/Proektuvanya/Program
+*** WARNING: you are running uWSGI without its master process manager ***
+your processes number limit is 11868
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to TCP address 127.0.0.1:8000 fd 3
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+Python version: 3.9.2 (default, Mar 20 2025, 02:07:39)  [GCC 10.2.1 20210110]
+PEP 405 virtualenv detected: /home/kolre2/Proektuvanya/Program/venv
+Set PythonHome to /home/kolre2/Proektuvanya/Program/venv
+Python main interpreter initialized at 0x57e1c700
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 64128 bytes (62 KB) for 1 cores
+*** Operational MODE: single process ***
+WSGI app 0 (mountpoint='') ready in 1 seconds on interpreter 0x57e1c700 pid: 23410 (default app)
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI worker 1 (and the only) (pid: 23410, cores: 1)
+[pid: 23410|app: 0|req: 1/1] 127.0.0.1 () {44 vars in 832 bytes} [Mon Jun  2 23:52:14 2025] GET / => generated 2348 bytes in 3245 msecs (HTTP/1.1 200) 6 headers in 208 bytes (1 switches on core 0)
+[pid: 23410|app: 0|req: 2/2] 127.0.0.1 () {44 vars in 851 bytes} [Mon Jun  2 23:52:20 2025] GET /stream/ => generated 1538 bytes in 11 msecs (HTTP/1.1 200) 6 headers in 208 bytes (1 switches on core 0)
+Mon Jun  2 23:52:40 2025 - SIGPIPE: writing to a closed pipe/socket/fd (probably the client disconnected) on request /video_feed/ (ip 127.0.0.1) !!!
+Mon Jun  2 23:52:40 2025 - uwsgi_response_write_body_do(): Broken pipe [core/writer.c line 429] during GET /video_feed/ (127.0.0.1)
+OSError: write error
+[pid: 23410|app: 0|req: 3/3] 127.0.0.1 () {42 vars in 760 bytes} [Mon Jun  2 23:52:20 2025] GET /video_feed/ => generated 15365253 bytes in 20401 msecs (HTTP/1.1 200) 5 headers in 203 bytes (250 switches on core 0)
+corrupted double-linked list
+[uWSGI] getting INI configuration from /home/kolre2/Proektuvanya/Program/venv/bin/uwsgi.ini
+*** Starting uWSGI 2.0.29 (32bit) on [Tue Jun  3 00:53:15 2025] ***
+compiled with version: 10.2.1 20210110 on 22 May 2025 02:56:22
+os: Linux-5.10.0-15-amd64 #1 SMP Debian 5.10.120-1 (2022-06-09)
+nodename: raspberry
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 1
+current working directory: /home/kolre2/Proektuvanya/Program/video_admin
+detected binary path: /home/kolre2/Proektuvanya/Program/venv/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+chdir() to /home/kolre2/Proektuvanya/Program
+*** WARNING: you are running uWSGI without its master process manager ***
+your processes number limit is 11868
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to TCP address 127.0.0.1:8000 fd 3
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+Python version: 3.9.2 (default, Mar 20 2025, 02:07:39)  [GCC 10.2.1 20210110]
+PEP 405 virtualenv detected: /home/kolre2/Proektuvanya/Program/venv
+Set PythonHome to /home/kolre2/Proektuvanya/Program/venv
+Python main interpreter initialized at 0x57993700
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 64128 bytes (62 KB) for 1 cores
+*** Operational MODE: single process ***
+WSGI app 0 (mountpoint='') ready in 2 seconds on interpreter 0x57993700 pid: 23433 (default app)
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI worker 1 (and the only) (pid: 23433, cores: 1)
+[pid: 23433|app: 0|req: 1/1] 127.0.0.1 () {44 vars in 832 bytes} [Mon Jun  2 23:53:17 2025] GET / => generated 2348 bytes in 1794 msecs (HTTP/1.1 200) 6 headers in 208 bytes (1 switches on core 0)
+[pid: 23433|app: 0|req: 2/2] 127.0.0.1 () {44 vars in 851 bytes} [Mon Jun  2 23:53:20 2025] GET /stream/ => generated 1538 bytes in 11 msecs (HTTP/1.1 200) 6 headers in 208 bytes (1 switches on core 0)
+Mon Jun  2 23:53:55 2025 - SIGPIPE: writing to a closed pipe/socket/fd (probably the client disconnected) on request /video_feed/ (ip 127.0.0.1) !!!
+Mon Jun  2 23:53:55 2025 - uwsgi_response_write_body_do(): Broken pipe [core/writer.c line 429] during GET /video_feed/ (127.0.0.1)
+OSError: write error
+[pid: 23433|app: 0|req: 3/3] 127.0.0.1 () {42 vars in 760 bytes} [Mon Jun  2 23:53:20 2025] GET /video_feed/ => generated 19626496 bytes in 35215 msecs (HTTP/1.1 200) 5 headers in 203 bytes (355 switches on core 0)
+!!! uWSGI process 23433 got Segmentation Fault !!!
+malloc(): unsorted double linked list corrupted
+[uWSGI] getting INI configuration from /home/kolre2/Proektuvanya/Program/venv/bin/uwsgi.ini
+*** Starting uWSGI 2.0.29 (32bit) on [Tue Jun  3 00:54:20 2025] ***
+compiled with version: 10.2.1 20210110 on 22 May 2025 02:56:22
+os: Linux-5.10.0-15-amd64 #1 SMP Debian 5.10.120-1 (2022-06-09)
+nodename: raspberry
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 1
+current working directory: /home/kolre2/Proektuvanya/Program/video_admin
+detected binary path: /home/kolre2/Proektuvanya/Program/venv/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+chdir() to /home/kolre2/Proektuvanya/Program
+*** WARNING: you are running uWSGI without its master process manager ***
+your processes number limit is 11868
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to TCP address 127.0.0.1:8000 fd 3
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+Python version: 3.9.2 (default, Mar 20 2025, 02:07:39)  [GCC 10.2.1 20210110]
+PEP 405 virtualenv detected: /home/kolre2/Proektuvanya/Program/venv
+Set PythonHome to /home/kolre2/Proektuvanya/Program/venv
+Python main interpreter initialized at 0x56b36700
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 64128 bytes (62 KB) for 1 cores
+*** Operational MODE: single process ***
+WSGI app 0 (mountpoint='') ready in 1 seconds on interpreter 0x56b36700 pid: 23458 (default app)
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI worker 1 (and the only) (pid: 23458, cores: 1)
+[pid: 23458|app: 0|req: 1/1] 127.0.0.1 () {44 vars in 832 bytes} [Mon Jun  2 23:54:21 2025] GET / => generated 2348 bytes in 1353 msecs (HTTP/1.1 200) 6 headers in 208 bytes (1 switches on core 0)
+[pid: 23458|app: 0|req: 2/2] 127.0.0.1 () {44 vars in 851 bytes} [Mon Jun  2 23:54:24 2025] GET /stream/ => generated 1538 bytes in 8 msecs (HTTP/1.1 200) 6 headers in 208 bytes (1 switches on core 0)
+Mon Jun  2 23:54:43 2025 - SIGPIPE: writing to a closed pipe/socket/fd (probably the client disconnected) on request /video_feed/ (ip 127.0.0.1) !!!
+Mon Jun  2 23:54:43 2025 - uwsgi_response_write_body_do(): Broken pipe [core/writer.c line 429] during GET /video_feed/ (127.0.0.1)
+OSError: write error
+[pid: 23458|app: 0|req: 3/3] 127.0.0.1 () {42 vars in 760 bytes} [Mon Jun  2 23:54:25 2025] GET /video_feed/ => generated 11734128 bytes in 18874 msecs (HTTP/1.1 200) 5 headers in 203 bytes (204 switches on core 0)
+corrupted double-linked list
+[uWSGI] getting INI configuration from /home/kolre2/Proektuvanya/Program/venv/bin/uwsgi.ini
+*** Starting uWSGI 2.0.29 (32bit) on [Tue Jun  3 00:54:55 2025] ***
+compiled with version: 10.2.1 20210110 on 22 May 2025 02:56:22
+os: Linux-5.10.0-15-amd64 #1 SMP Debian 5.10.120-1 (2022-06-09)
+nodename: raspberry
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 1
+current working directory: /home/kolre2/Proektuvanya/Program/video_admin
+detected binary path: /home/kolre2/Proektuvanya/Program/venv/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+chdir() to /home/kolre2/Proektuvanya/Program
+*** WARNING: you are running uWSGI without its master process manager ***
+your processes number limit is 11868
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to TCP address 127.0.0.1:8000 fd 3
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+Python version: 3.9.2 (default, Mar 20 2025, 02:07:39)  [GCC 10.2.1 20210110]
+PEP 405 virtualenv detected: /home/kolre2/Proektuvanya/Program/venv
+Set PythonHome to /home/kolre2/Proektuvanya/Program/venv
+Python main interpreter initialized at 0x56d95700
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 64128 bytes (62 KB) for 1 cores
+*** Operational MODE: single process ***
+WSGI app 0 (mountpoint='') ready in 1 seconds on interpreter 0x56d95700 pid: 23478 (default app)
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI worker 1 (and the only) (pid: 23478, cores: 1)
+[pid: 23478|app: 0|req: 1/1] 127.0.0.1 () {44 vars in 832 bytes} [Mon Jun  2 23:54:56 2025] GET / => generated 2348 bytes in 2074 msecs (HTTP/1.1 200) 6 headers in 208 bytes (1 switches on core 0)
+[pid: 23478|app: 0|req: 2/2] 127.0.0.1 () {44 vars in 851 bytes} [Mon Jun  2 23:55:00 2025] GET /stream/ => generated 1538 bytes in 9 msecs (HTTP/1.1 200) 6 headers in 208 bytes (1 switches on core 0)
+Mon Jun  2 23:55:23 2025 - SIGPIPE: writing to a closed pipe/socket/fd (probably the client disconnected) on request /video_feed/ (ip 127.0.0.1) !!!
+Mon Jun  2 23:55:23 2025 - uwsgi_response_write_body_do(): Broken pipe [core/writer.c line 429] during GET /video_feed/ (127.0.0.1)
+OSError: write error
+[pid: 23478|app: 0|req: 3/3] 127.0.0.1 () {42 vars in 760 bytes} [Mon Jun  2 23:55:00 2025] GET /video_feed/ => generated 14604668 bytes in 22996 msecs (HTTP/1.1 200) 5 headers in 203 bytes (260 switches on core 0)
+[pid: 23478|app: 0|req: 4/4] 127.0.0.1 () {44 vars in 851 bytes} [Tue Jun  3 02:00:40 2025] GET /stream/ => generated 1538 bytes in 1 msecs (HTTP/1.1 200) 6 headers in 208 bytes (1 switches on core 0)
+Tue Jun  3 02:01:55 2025 - SIGPIPE: writing to a closed pipe/socket/fd (probably the client disconnected) on request /video_feed/ (ip 127.0.0.1) !!!
+Tue Jun  3 02:01:55 2025 - uwsgi_response_write_body_do(): Broken pipe [core/writer.c line 429] during GET /video_feed/ (127.0.0.1)
+OSError: write error
+[pid: 23478|app: 0|req: 5/5] 127.0.0.1 () {42 vars in 760 bytes} [Tue Jun  3 02:00:40 2025] GET /video_feed/ => generated 43261504 bytes in 74440 msecs (HTTP/1.1 200) 5 headers in 203 bytes (762 switches on core 0)
